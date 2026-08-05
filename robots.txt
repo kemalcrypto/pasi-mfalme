@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://darling-chaja-56f833.netlify.app/sitemap.xml

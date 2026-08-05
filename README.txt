@@ -1,0 +1,1 @@
+Weka picha yako ndani ya folder images kwa jina hero.jpg
