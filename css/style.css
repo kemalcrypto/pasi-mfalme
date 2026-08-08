@@ -4444,5 +4444,163 @@ nav ul li a{
         width: 54px;
         height: 54px;
     }
+   /* =====================================================
+   PASI MFALME — FINAL MOBILE LOGO + HERO POLISH
+===================================================== */
+
+@media (max-width: 768px){
+
+    /* ---------------------------------------------
+       MOBILE HEADER
+    --------------------------------------------- */
+
+    header{
+        height: 76px;
+        padding: 0 15px;
+    }
+
+    header .logo img,
+    header img{
+        width: 68px;
+        height: 52px;
+        object-fit: contain;
+    }
+
+
+    /* ---------------------------------------------
+       HERO — BETTER MOBILE VISIBILITY
+    --------------------------------------------- */
+
+    .hero{
+        min-height: auto;
+        padding-top: 105px;
+        padding-bottom: 55px;
+        position: relative;
+        overflow: hidden;
+    }
+
+
+    /* Make the background image visible but controlled */
+
+    .hero::before{
+        opacity: .24;
+    }
+
+
+    /* Premium dark overlay */
+
+    .hero::after{
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+            180deg,
+            rgba(4,18,38,.76) 0%,
+            rgba(4,18,38,.62) 48%,
+            rgba(4,18,38,.78) 100%
+        );
+        pointer-events: none;
+        z-index: 0;
+    }
+
+
+    /* Keep Hero content above overlay */
+
+    .hero > *{
+        position: relative;
+        z-index: 2;
+    }
+
+
+    /* ---------------------------------------------
+       HERO TEXT
+    --------------------------------------------- */
+
+    .hero h1{
+        font-size: clamp(38px, 10vw, 52px);
+        line-height: 1.02;
+        margin: 18px auto 18px;
+        max-width: 94%;
+    }
+
+    .hero p{
+        font-size: 15px;
+        line-height: 1.75;
+        max-width: 92%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* ---------------------------------------------
+       HERO BUTTONS
+    --------------------------------------------- */
+
+    .hero .btn,
+    .hero button,
+    .hero a{
+        max-width: 600px;
+    }
+
+
+    /* ---------------------------------------------
+       LOCATION / SERVICE BADGES
+    --------------------------------------------- */
+
+    .hero .location,
+    .hero .badge,
+    .hero .eyebrow{
+        font-size: 13px;
+    }
+
+
+    /* ---------------------------------------------
+       MOBILE STATS
+    --------------------------------------------- */
+
+    .hero .stats{
+        gap: 12px;
+    }
+
+    .hero .stat{
+        min-width: 0;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL PHONES
+===================================================== */
+
+@media (max-width: 430px){
+
+    header{
+        height: 72px;
+        padding: 0 14px;
+    }
+
+    header .logo img,
+    header img{
+        width: 64px;
+        height: 49px;
+    }
+
+    .hero{
+        padding-top: 98px;
+        padding-bottom: 45px;
+    }
+
+    .hero h1{
+        font-size: 39px;
+        line-height: 1.04;
+    }
+
+    .hero p{
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+}
 
 }
