@@ -86,7 +86,7 @@ TOP INFO BAR
 
     </div>
 
-    <nav>
+   <nav id="navbar">
 
         <ul>
 
@@ -113,7 +113,11 @@ TOP INFO BAR
         Weka Oda
 
     </a>
+<div class="menu-toggle" id="menu-toggle">
 
+    <i class="fas fa-bars"></i>
+
+</div>
 </header>
 <!--==========================
 HERO SECTION
@@ -125,20 +129,8 @@ HERO SECTION
 
     <div class="hero-container">
 
+        <!-- LEFT SIDE -->
         <div class="hero-content">
-
-            <!-- MARQUEE -->
-
-            <div class="hero-marquee">
-
-                <div class="marquee-track">
-
-
-                </div>
-
-            </div>
-
-            <!-- LOCATION -->
 
             <div class="hero-location">
 
@@ -153,27 +145,33 @@ HERO SECTION
             </div>
 
             <span class="hero-tag">
-                KARIBU
+
+                ✨ Laundry • Dry Cleaning • Pickup & Delivery
+
             </span>
 
             <h1>
 
-                PASI
-                <span>MFALME</span>
+                Nguo Safi,
+                <br>
+
+                <span>Pasi Kamili.</span>
 
             </h1>
 
             <p>
 
-                Tunatoa huduma za kufua, kupiga pasi,
-                Dry Cleaning pamoja na Pickup & Delivery
-                kwa ubora wa hali ya juu.
+                Karibu Pasi Mfalme, sehemu unayoweza kuamini kwa huduma za
+                kufua, kupiga pasi, Dry Cleaning pamoja na Pickup & Delivery
+                kwa ubora wa hali ya juu, kwa haraka na kwa bei rafiki.
 
             </p>
 
             <div class="hero-buttons">
 
-                <a href="#contact" class="btn btn-gold">
+                <a href="#booking" class="btn btn-gold">
+
+                    <i class="fas fa-calendar-check"></i>
 
                     Weka Oda
 
@@ -181,41 +179,125 @@ HERO SECTION
 
                 <a href="#services" class="btn btn-outline">
 
+                    <i class="fas fa-shirt"></i>
+
                     Huduma Zetu
 
                 </a>
 
             </div>
 
+            <!-- STATS -->
+
+            <div class="hero-stats">
+
+                <div class="stat">
+
+                    <h3>2500+</h3>
+
+                    <span>Wateja</span>
+
+                </div>
+
+                <div class="stat">
+
+                    <h3>18000+</h3>
+
+                    <span>Nguo</span>
+
+                </div>
+
+                <div class="stat">
+
+                    <h3>4.9★</h3>
+
+                    <span>Rating</span>
+
+                </div>
+
+            </div>
+
         </div>
 
-        <!-- RIGHT CARD -->
+        <!-- RIGHT SIDE -->
 
         <div class="hero-card">
 
-            <h3>Kwa Nini Utuchague?</h3>
+            <h3>
+
+                Kwa Nini Uchague Pasi Mfalme?
+
+            </h3>
 
             <div class="hero-item">
+
                 <i class="fas fa-check-circle"></i>
-                <span>Ubora wa Hali ya Juu</span>
+
+                <span>Huduma Bora na Zenye Uhakika</span>
+
             </div>
 
             <div class="hero-item">
+
+                <i class="fas fa-shirt"></i>
+
+                <span>Kufua na Kupiga Pasi kwa Umakini</span>
+
+            </div>
+
+            <div class="hero-item">
+
+                <i class="fas fa-soap"></i>
+
+                <span>Dry Cleaning ya Kisasa</span>
+
+            </div>
+
+            <div class="hero-item">
+
                 <i class="fas fa-truck"></i>
-                <span>Pickup & Delivery</span>
+
+                <span>Pickup & Delivery Nyumbani</span>
+
             </div>
 
             <div class="hero-item">
+
                 <i class="fas fa-clock"></i>
+
                 <span>Huduma ya Haraka</span>
+
             </div>
 
             <div class="hero-item">
+
                 <i class="fas fa-tags"></i>
-                <span>Bei Nafuu</span>
+
+                <span>Bei Nafuu kwa Kila Mteja</span>
+
             </div>
+
+            <a href="https://wa.me/255683433406" target="_blank" class="btn btn-gold" style="width:100%;margin-top:25px;text-align:center;display:block;">
+
+                <i class="fab fa-whatsapp"></i>
+
+                Agiza Kupitia WhatsApp
+
+            </a>
 
         </div>
+
+    </div>
+
+    <!-- SCROLL DOWN -->
+
+    <div class="scroll-down">
+
+        <a href="#about">
+
+            <i class="fas fa-angle-down"></i>
+
+        </a>
 
     </div>
 
@@ -953,6 +1035,310 @@ FOOTER
 
 </button>
 <script src="js/script.js"></script>
+<!-- =========================================
+     PASI MFALME AI ASSISTANT
+========================================= -->
 
-</body>
-</html>
+<div class="ai-assistant">
+
+    <!-- ================================
+         AI CHAT WINDOW
+    ================================= -->
+
+    <div class="ai-chat-box" id="aiChatBox">
+
+        <!-- AI HEADER -->
+
+        <div class="ai-header">
+
+            <div class="ai-avatar">
+                👑
+            </div>
+
+            <div class="ai-header-text">
+
+                <h3>
+                    Pasi Mfalme AI
+                </h3>
+
+                <span>
+                    ● Tupo online
+                </span>
+
+            </div>
+
+            <button
+                class="ai-close"
+                id="aiClose"
+                aria-label="Funga AI"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <!-- ================================
+             AI MESSAGES
+        ================================= -->
+
+        <div
+            class="ai-messages"
+            id="aiMessages"
+        >
+
+            <!-- WELCOME MESSAGE -->
+
+            <div class="ai-message bot">
+
+                <strong>
+                    Karibu Pasi Mfalme 👑
+                </strong>
+
+                <br><br>
+
+                Tunakusaidia kuhakikisha nguo zako
+                zinakuwa
+                <b>
+                    Safi, Nadhifu na Zenye Muonekano wa Kifalme.
+                </b>
+
+                <br><br>
+
+                Mimi ni
+                <b>Pasi Mfalme AI</b>,
+                msaidizi wako wa kidijitali.
+
+                <br><br>
+
+                <b>Nikusaidie nini leo?</b>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================================
+             QUICK ACTIONS
+        ================================= -->
+
+        <div class="ai-quick-buttons">
+
+            <button
+                type="button"
+                onclick="aiQuickMessage('Nataka kujua huduma zenu')"
+            >
+                🧺 Huduma
+            </button>
+
+
+            <button
+                type="button"
+                onclick="aiQuickMessage('Nataka kuweka oda')"
+            >
+                📦 Weka Oda
+            </button>
+
+
+            <button
+                type="button"
+                onclick="aiQuickMessage('Mnafanya pickup na delivery?')"
+            >
+                🚚 Pickup
+            </button>
+
+
+            <button
+                type="button"
+                onclick="aiQuickMessage('Nataka kujua bei')"
+            >
+                💰 Bei
+            </button>
+
+
+            <button
+                type="button"
+                onclick="aiQuickMessage('Nataka kuwasiliana na Pasi Mfalme')"
+            >
+                📞 Wasiliana
+            </button>
+
+        </div>
+
+
+        <!-- ================================
+             INPUT AREA
+        ================================= -->
+
+        <div class="ai-input-area">
+
+            <input
+                type="text"
+                id="aiInput"
+                placeholder="Andika ujumbe..."
+                autocomplete="off"
+            >
+
+            <button
+                type="button"
+                id="aiSend"
+                aria-label="Tuma ujumbe"
+            >
+                ➤
+            </button>
+
+        </div>
+
+    </div>
+<!-- =========================================
+     PASI MFALME AI ASSISTANT
+========================================= -->
+
+<div class="ai-assistant">
+
+    <!-- AI CHAT WINDOW -->
+    <div class="ai-chat-box" id="aiChatBox">
+
+        <!-- HEADER -->
+        <div class="ai-header">
+
+            <div class="ai-avatar">
+                👑
+            </div>
+
+            <div class="ai-header-text">
+                <h3>Pasi Mfalme AI</h3>
+                <span>● Tupo online</span>
+            </div>
+
+            <button
+                class="ai-close"
+                id="aiClose"
+                type="button"
+                aria-label="Funga Pasi Mfalme AI"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <!-- MESSAGES -->
+        <div
+            class="ai-messages"
+            id="aiMessages"
+        >
+
+            <!-- WELCOME MESSAGE -->
+            <div class="ai-message bot">
+
+                <strong>
+                    Karibu Pasi Mfalme 👑
+                </strong>
+
+                <br><br>
+
+                Tunakusaidia kuhakikisha nguo zako
+                zinakuwa
+                <strong>
+                    Safi, Nadhifu na Zenye Muonekano wa Kifalme.
+                </strong>
+
+                <br><br>
+
+                Mimi ni
+                <strong>Pasi Mfalme AI</strong>,
+                msaidizi wako wa kidijitali.
+
+                <br><br>
+
+                <strong>Nikusaidie nini leo?</strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUICK ACTIONS -->
+        <div class="ai-quick-buttons">
+
+            <button
+                type="button"
+                onclick="aiQuickMessage('Nataka kujua huduma zenu')"
+            >
+                🧺 Huduma
+            </button>
+
+
+            <button
+                type="button"
+                onclick="aiQuickMessage('Nataka kuweka oda')"
+            >
+                📦 Weka Oda
+            </button>
+
+
+            <button
+                type="button"
+                onclick="aiQuickMessage('Mnafanya pickup na delivery?')"
+            >
+                🚚 Pickup
+            </button>
+
+
+            <button
+                type="button"
+                onclick="aiQuickMessage('Nataka kujua bei')"
+            >
+                💰 Bei
+            </button>
+
+
+            <button
+                type="button"
+                onclick="aiQuickMessage('Nataka kuwasiliana na Pasi Mfalme')"
+            >
+                📞 Wasiliana
+            </button>
+
+        </div>
+
+
+        <!-- INPUT -->
+        <div class="ai-input-area">
+
+            <input
+                type="text"
+                id="aiInput"
+                placeholder="Andika ujumbe..."
+                autocomplete="off"
+            >
+
+            <button
+                type="button"
+                id="aiSend"
+                aria-label="Tuma ujumbe"
+            >
+                ➤
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- FLOATING BUTTON -->
+    <button
+        class="ai-floating-button"
+        id="aiOpen"
+        type="button"
+        aria-label="Fungua Pasi Mfalme AI"
+    >
+        <span>✦</span>
+    </button>
+
+</div>
+
+<!-- =========================================
+     END PASI MFALME AI
+========================================= -->
